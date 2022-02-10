@@ -1,14 +1,14 @@
 class CfgPatches
 {
-	class yourmapname_world
+	class smokymountains
 	{
 		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]={};
-		author="Your Name";
-		name="yourmapname";
-		url="www.google.de";
+		requiredAddons[]={"DZ_Data","DZ_Surfaces","DZ_Surfaces_Bliss"};
+		author="PackJC";
+		name="smokymountains";
+		url="www.github.com/packjc";
 	};
 };
 class CfgWorlds
@@ -19,14 +19,13 @@ class CfgWorlds
 	{
 		class Grid;
 	};
-	class yourmapname: ChernarusPlus
+	class smokymountains: ChernarusPlus
 	{
-		access=3;
 		worldId=2;
 		cutscenes[]={};
-		description="yourmapname";
+		description="smokymountains";
 		icon="";
-		worldName="yourmapname\yourworldname.wrp";
+		worldName="smokymountains\smokymountains.wrp";
 		pictureMap="";
 		pictureShot="";
 		oceanMaterial="{11D1156E1D9DADF0}Graphics/Materials/water/oceanold_samplemap.emat";
@@ -34,7 +33,8 @@ class CfgWorlds
 		oceanStormMaterial="{11D1156E1D9DADF0}Graphics/Materials/water/oceanold_samplemap.emat";
 		class Navmesh
 		{
-			navmeshName="yourmapname\navmesh\navmesh.nm";
+			navmeshName = "\DZ\worlds\chernarusplus\navmesh\navmesh.nm";
+			//navmeshName="smokymountains\navmesh\navmesh.nm";
 			class GenParams
 			{
 				tileWidth=50;
@@ -89,8 +89,8 @@ class CfgWorlds
 		};
 		class Grid: Grid
 		{
-			offsetX=0;
-			offsetY=-15360;
+			offsetX=20000;
+			offsetY=-20000;
 			class Zoom1
 			{
 				zoomMax=0.5;
@@ -117,7 +117,7 @@ class CfgWorlds
 		forecastWeather=0.30000001;
 		forecastFog=0;
 		seagullPos[]={1272.842,150,14034.962};
-		centerPosition[]={2500,2500,300};
+		centerPosition[]={5500,5500,5300};
 		ilsPosition[]={2545,3000};
 		ilsDirection[]={0,0.079999998,1};
 		ilsTaxiIn[]={2495,2725,2495,2850,2508,2860,2508,3000,2520,3010,2545,3000};
@@ -172,7 +172,7 @@ class CfgWorlds
 };
 class CfgWorldList
 {
-	class yourmapname
+	class smokymountains
 	{
 	};
 };
